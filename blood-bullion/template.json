@@ -1,0 +1,53 @@
+{
+  "Actor": {
+    "types": ["operator"],
+    "templates": {
+      "base": {
+        "vice": "",
+        "insanity": "",
+        "injury": "",
+        "equipment": "",
+        "drugEquation": "",
+        "attributes": {
+          "combat": 0,
+          "firearms": 0,
+          "nerve": 0,
+          "bullshit": 0,
+          "hunch": 0,
+          "photography": 0,
+          "chemicals": 0
+        }
+      }
+    },
+    "operator": {
+      "templates": ["base"]
+    }
+  },
+  "Item": {
+    "types": ["equipment", "weapon", "drug"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "equipment": {
+      "templates": ["base"]
+    },
+    "weapon": {
+      "templates": ["base"]
+    },
+    "drug": {
+      "templates": ["base"],
+      "letter": "",
+      "modifiers": {
+        "combat": 0,
+        "firearms": 0,
+        "nerve": 0,
+        "bullshit": 0,
+        "hunch": 0,
+        "photography": 0,
+        "chemicals": 0
+      }
+    }
+  }
+}
